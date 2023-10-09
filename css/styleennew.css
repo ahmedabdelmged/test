@@ -1,0 +1,1016 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*start header*/
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: gray;
+    overflow: auto ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 30;
+}
+.img-header{
+    width: 200px;
+    height: 60px;
+    margin-left: 100px;
+    float: left;
+}
+
+.list{
+    list-style: none;
+    float: right;
+    margin-right: 150px;
+
+}
+.list li{
+    display: inline-block;
+    margin:15px 30px 0 0;
+    color: white;
+    font-size: 25px;
+    /*text-transform: uppercase;*/
+}
+
+.list li a {   
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+.list li a::after{
+    content:"" ;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 5px;
+    background-color: rgb(39, 38, 38);
+    position: absolute;
+    visibility: hidden;
+    display: block;
+    transition: 0.5s;
+}
+.list li a:hover::after{
+    visibility: visible;
+    width: 100%;
+    left: 0;
+}
+.list li a:hover{
+    color: rgb(8, 8, 8);
+}
+/* end header*/ 
+
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* start sec home*/
+.homecontent{
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.h1home{
+    color: hsl(0, 0%, 100%);
+    font-size: 70px;
+    text-transform: uppercase;
+    line-height: 1px;
+}
+.phome{
+    font-size: 50px;
+    color: hsl(0, 0%, 100%);
+}
+.Home{
+    background-image: url(../Image/Premium\ Photo\ _\ Top\ view\ of\ dark\ stylish\ workplace\ with\ smartphone\ and\ office\ supplies.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 0px;   
+    left: 0%;
+    background-color: rgba(0, 0, 0 , 0.5);
+
+}
+.homecontent .bu{
+    width: 160px;
+    border-radius: 9px;
+    font-size: 17px;
+    padding: 20px;
+    margin: 10px 10px;
+    border: none;
+    text-transform: capitalize;
+    
+}
+.homecontent .bu2{
+    background-color: blue;
+    color: white;
+}
+.homecontent .bu:hover{
+    opacity: 0.5;
+
+}
+
+/*end sec home */
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*strat sec welcom*/
+.container{
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    
+}
+.welcome{
+    padding: 120px;
+}
+.we-content{
+
+}
+.we-header{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.we-iteam i{
+    color: #3232df;
+    display: inline-block;
+    margin: 15px 15px;
+    font-size: 25px;
+    
+}
+
+.linewe{
+    width:70px;
+    height: 7px;
+    background-color: rgb(29, 7, 158);
+    margin:10px auto 70px auto;
+    display: block;
+}
+.we-iteam{
+    float: left;
+    width: 30%;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    border: 3px solid black ;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+.ww{
+    margin: 0px 5% ; 
+}
+.we-info-title{
+    font-size: 35px;
+    font-weight: bold;
+    
+}
+.we-info-p{
+    letter-spacing: 1px;
+    line-height: 35px;
+    color: rgb(78, 76, 76);
+    font-size: 15px
+}
+.we-item-link{
+    border: none;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+/*.we-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    visibility: hidden;
+    transition: 3s;
+    opacity: 0;
+
+}
+.we-iteam:hover .team-overlay {
+    visibility: visible;
+    opacity: 0.7;
+}*/
+
+.we-iteam::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(26, 25, 25);
+    transition:1s;
+
+}
+.we-iteam:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+
+
+/* end sec welcome */
+
+
+/* start sec  featured work */
+
+.container{
+    width: 80%;
+    margin: auto;
+    
+    
+ 
+}
+.work{
+    background-color: rgb(230, 226, 226);
+    padding: 120px;
+    height: 800px;
+    
+    
+}
+.work-content{
+}
+.h2-work{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.linewo{
+    width:70px;
+    height: 7px;
+    background-color: rgb(29, 7, 158);
+    margin:10px auto 50px auto;
+    display: block;
+}
+.work-iteam{
+    float: left;
+    background-color: rgb(202, 200, 200);
+    width: 30%;
+    padding: 14px 19px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 25px;
+}
+.wo{
+    margin: 0px 5% ; 
+}
+.work-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+
+}
+.work-img img{
+    width: 80%;
+}
+.work-layout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(128, 125, 125, 0.5) ;
+    visibility: hidden;
+    opacity: 0;
+    transition: 2s;
+}
+.work-info-p{
+    color: rgb(103, 103, 151);
+    margin-top: 35px;
+}
+
+.work-iteam:hover .team-overlay {
+    visibility: visible;
+    opacity: 0.7;
+}
+
+.work-iteam::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(126, 125, 125);
+    opacity: 0;
+    transition:2s;
+
+}
+.work-iteam:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.work-layout a {
+    width: 30px;
+    height:30px;
+    background-color: rgb(32, 205, 248);
+    color: white;
+    font-size: 20px;
+    padding:5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+/*end sec work*/
+
+
+/*strat sec offer*/
+.container{
+    width: 80%;
+    margin: auto;
+   
+}
+.offer{
+    height: 650px;
+}
+.offer-content{
+
+}
+.offer-header{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin: 100px 0px 100px 0px;
+}
+.offer-iteam i{
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    color: #6195ff;
+    font-size: 35px;
+    display: inline-block;
+}
+.off-info-title{
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.off-info-p{
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: rgb(78, 76, 76);
+    font-size: 15px;
+    text-align: left;
+}
+.lineoff{
+    width:70px;
+    height: 7px;
+    background-color: rgb(29, 7, 158);
+    margin:10px auto 70px auto;
+    display: block;
+}
+.offer-iteam{
+    float: left;
+    width: 30%;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    border: 1px solid #a8a8a8 ;
+    padding: 20px 15px 20px 60px;
+    margin-bottom: 25px;
+    
+}
+
+.off{
+    margin: 0px 5% ; 
+}
+
+.offer-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    visibility: hidden;
+    transition: 3s;
+    opacity: 0;
+}
+.offer-iteam:hover .offer-overlay {
+    visibility: visible;
+    opacity: 0.7;
+}
+
+.offer-iteam::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(26, 25, 25);
+    transition:1s;
+}
+.offer-iteam:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+/* end sec offer*/
+/* start sec number*/
+.number{
+    background-attachment: fixed;
+    background-image: url(../Image/Premium\ Photo\ _\ Top\ view\ of\ dark\ stylish\ workplace\ with\ smartphone\ and\ office\ supplies.png);
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    width: 100%;
+    margin: 100px auto 100px auto;
+}
+.overlay-number{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.numbers-items{
+    overflow: hidden;
+    padding: 120px;
+}
+.number-item{
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+}
+.number-p{
+    color: white;
+    
+}
+.numbers-items i{
+    color: #3232df;
+    margin-bottom: 15px;
+    display: inline-block;
+    font-size: 35px;
+}
+/* end sec      */
+/*////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* start sec team*/
+.container{
+    width: 80%;
+    margin: auto;
+}
+.our-team{
+    background-color: rgb(206, 202, 202);
+    padding: 80px;
+    height:600px;
+
+}
+.team-content{
+}
+.h1-team{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin: auto 0px 100px 0px;
+    display: block;
+}
+.team-content hr{
+    width:70px;
+    height: 7px;
+    background-color: rgb(29, 7, 158);
+    margin:-80px auto 70px auto;
+}
+.team-iteam{
+    float: left;
+    background-color: rgb(202, 200, 200);
+    width: 30%;
+    padding: 14px 19px;
+    text-align: center;
+    position: relative;
+}
+.d2{
+    margin: 0px 5% ; 
+}
+.team-img{
+    width: 90%;
+    margin: auto;
+    position: relative;
+
+}
+.team-img img{
+    width: 100%;
+}
+.team-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    visibility: hidden;
+    transition: 3s;
+    opacity: 0;
+
+
+
+}
+.team-iteam:hover .team-overlay {
+    visibility: visible;
+    opacity: 0.7;
+}
+
+.team-iteam::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(34, 31, 31);
+    opacity: 0;
+    transition:2s;
+
+}
+.team-iteam:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.team-overlay a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(32, 205, 248);
+    color: white;
+    font-size: 25px;
+    margin-left: auto;
+}
+.team-overlay a i {
+    line-height: 40px;
+
+}
+
+
+
+/* start sec prices*/
+h1{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin: 120px 0px 100px 0px;
+}
+hr{
+    width:70px;
+    height: 7px;
+    background-color: rgb(29, 7, 158);
+    margin:-80px auto 70px auto;
+}
+p{
+    text-align: center;
+    font: 25px bold  ;
+    color: gray;
+}
+.parent{
+    overflow: auto;
+    margin-top: 150px;
+}
+.div1 {
+    width: 300px;
+    height: 450px;
+    background-color: rgb(255, 249, 249);
+    float: left;
+    margin-left: 400px;
+    border: 2px solid gray;
+    border-color: gray;
+     
+}
+.div1:hover{
+    border-radius: 20px;
+
+}
+.div2 {
+    width: 300px;
+    height: 450px;
+    background-color: rgb(255, 249, 249);
+    border: 2px solid gray;
+    border-color: gray;
+    float: left;
+    margin: 0px  100px  ;
+}
+.div2:hover{
+    border-radius: 20px;
+}
+.div3 {
+    width: 300px;
+    height: 450px;
+    background-color: rgb(255, 249, 249);
+    border: 2px solid gray;
+    float: left;
+}
+.div3:hover{
+    border-radius: 20px;
+}
+.div11{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font: 50px bold  ;
+    border: 2px solid rgb(83, 83, 83);
+    text-align: center;
+    margin: auto;
+
+}
+.div21{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font:50px bold;
+    border: 2px solid gray;
+    text-align: center;
+    margin: auto;
+}
+.div31{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    font: 50px bold ;
+    border: 4px solid gray;
+    text-align: center;
+    margin: auto;
+}
+.h21{
+    text-align: center;
+    margin-top: 60px;
+    color: gray;
+}
+.h22{
+    text-align: center;
+    margin-top: 60px;
+    color: gray;
+}
+.h23{
+    text-align: center;
+    margin-top: 60px;
+    color: gray;
+}
+.bu1{
+    width: 140px;
+    height: 30px;
+    margin-left: 80px;
+    border-radius: 8px;
+    background-color: rgb(211, 208, 208);
+    font: 20px bold;
+}
+.bu2{
+    width: 140px;
+    height: 30px;
+    margin-left: 80px;
+    border-radius: 8px;
+    background-color: rgb(211, 208, 208);
+    font: 20px bold;
+}
+.bu3{
+    width: 140px;
+    height: 30px;
+    margin-left: 80px;
+    border-radius: 8px;
+    background-color: rgb(211, 208, 208);
+    font: 20px bold;
+}
+.offer-iteam::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(26, 25, 25);
+    transition:1s;
+}
+.offer-iteam:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+/* end sec prices*/
+
+.test{
+    background-attachment: fixed;
+    background-image: url(../Image/Premium\ Photo\ _\ Top\ view\ of\ dark\ stylish\ workplace\ with\ smartphone\ and\ office\ supplies.png);
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    width: 100%;
+    margin: 100px auto 100px auto;
+}
+.overlay-test{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.test-item{
+    width: 50%;
+    float: left;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    margin-top: 125px;
+
+
+}
+.test-p{
+    color: white;
+    display: block;
+    margin-top: 40px;
+    margin-left:200px;
+    text-align: left;
+    font-size: 16px;
+    
+}
+.img-test{
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -150px;
+    /*transform: translate(-100%, -25%);*/
+}
+
+.test-title{
+    margin-left: 100px;
+    color: white;
+}
+.test-sp{
+    margin-left: 100px;
+    color: #6195ff;
+}
+
+
+
+
+
+.service{
+    background-color: #4b4848;
+    margin-top: 300px;
+    padding: 120px;
+    height: 600px;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.service-item{
+    width: 50%;
+    float: left;
+    /*padding: 14px 19px;
+    text-align: center;*/
+}
+.ser-title{
+    font-size: 35px;
+    margin: 6px 0px 8px 0px;
+    text-transform: capitalize;
+    text-align: left;
+    font-weight: bold;
+}
+.linser{
+    display: block;
+    text-align: left;
+    width: 70px;
+    height: 7px;
+    background-color: #3232df;
+
+}
+.ser-p{
+    font-size: 19px;
+    color: #999;
+    line-height: 2px;
+    padding-top:  20px;
+    display: block ;
+    margin-bottom: 20px;
+    margin-left: -200px;
+    
+}
+.ser-list{
+    list-style: none;
+    margin-left: -100px;
+
+}
+.ser-img{
+    width: 400px;
+    height: 400px;
+    width: 100%;
+}
+.ser-point{
+    list-style: none;
+    text-align: center
+
+}
+.ser-point li{
+    margin-left: 45%;
+    color: #999;
+    list-style: none;
+}
+
+
+
+
+/*strat sec welcom*/
+.container{
+    width: 80%;
+    margin: auto;
+    height: 250px;
+}
+.recent{
+}
+.rec-content{
+
+}
+.rec-header{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    margin: 100px 0px 100px 0px;
+}
+.rec-iteam i{
+    color: #3232df;
+    display: inline-block;
+    margin: 5px 5px;
+    font-size: 15px;
+    
+}
+.rec-img{
+    width: 200px;
+    height: 250px;
+   left: 0;
+}
+
+.linerec{
+    width:70px;
+    height: 7px;
+    background-color: rgb(29, 7, 158);
+    margin:10px auto 70px auto;
+    display: block;
+}
+.rec-iteam{
+    float: left;
+    width: 30%;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.rr{
+    margin: 0px 5% ; 
+}
+.rec-info-title{
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.rec-info-p{
+    letter-spacing: 1px;
+    line-height: 35px;
+    color: rgb(78, 76, 76);
+    font-size: 11px;
+    font-weight: bold;
+
+}
+.rec-item-link{
+    border: none;
+    margin-top: 25px;
+    text-decoration: none;
+}
+
+.rec-overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    visibility: hidden;
+    transition: 3s;
+    opacity: 0;
+
+}
+.rec-iteam:hover .rec-overlay {
+    visibility: visible;
+    opacity: 0.7;
+}
+
+.rec-iteam::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(148, 142, 172);
+    transition:1s;
+
+}
+.rec-iteam:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+.rec-list li{
+    list-style: none;
+    font-size: 9px;
+    display: inline-block;
+    margin: 0px 5px;
+}
+.rec-icon{
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+
+
+/* end sec recent */
+
+
+/* start sec footer*/
+.footer{
+    position: relative;
+    margin-top: 150px;
+}
+ .footer-content{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(30, 31, 31);
+    position: absolute;
+    text-align: center;
+    margin-top: 50px;
+
+
+ }
+ .p2{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+
+    
+ }
+ .footer-link li{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    list-style: none;
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    background-color: #6195ff;
+    font-size: 50px;
+    margin-top: 20px;
+ }
+ .footer-link li::after{
+    position: absolute;
+    content: "";
+    opacity: 0;
+    transition: .3s;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+ }
+ .img-footer{
+    width: 160px;
+    height: 90px;
+    margin-top: 100px;
+    
+    
+ }
+
+ /* end sec footer*/
